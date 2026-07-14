@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sameer Khan Advocate | Legal Consultant in Ramgarh, Alwar, Rajasthan</title>
+  <meta name="description" content="Professional legal consultation and representation by Sameer Khan (B.A. LL.B.) in Ramgarh, Alwar, Rajasthan. Contact: 9509947159." />
+  <meta name="keywords" content="Sameer Khan Advocate, Lawyer Ramgarh, Legal Consultant Alwar, Rajasthan Advocate, Civil Law, Criminal Law, Property Dispute, Family Law" />
+  <meta name="author" content="Sameer Khan, Advocate" />
+  <meta property="og:title" content="Sameer Khan Advocate | Legal Consultant in Ramgarh, Alwar" />
+  <meta property="og:description" content="Trusted legal advice & effective representation. Contact: 9509947159." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===========================
+       DESIGN TOKENS
+    =========================== */
+    :root {
+      --navy:        #0A1628;
+      --navy-mid:    #152347;
+      --navy-light:  #1E3567;
+      --charcoal:    #181825;
+      --gold:        #C9A84C;
+      --gold-lt:     #E4CC8B;
+      --gold-dk:     #9E7B2A;
+      --white:       #FFFFFF;
+      --off-white:   #F7F6F2;
+      --text:        #1A1A2E;
+      --muted:       #5C6275;
+      --border-gold: rgba(201,168,76,0.18);
+      --border-light:rgba(0,0,0,0.07);
+    }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; font-size:16px; }
+    body { font-family:'Inter',sans-serif; color:var(--text); background:var(--white); overflow-x:hidden; }
+
+    /* ===========================
+       TYPOGRAPHY HELPERS
+    =========================== */
+    .serif     { font-family:'Playfair Display',serif; }
+    .italic-sm { font-family:'Cormorant Garamond',serif; font-style:italic; color:var(--gold); font-size:1.05rem; letter-spacing:.06em; display:block; margin-bottom:.6rem; }
+
+    .section-heading {
+      font-family:'Playfair Display',serif;
+      font-size:clamp(1.8rem,3vw,2.6rem);
+      color:var(--navy);
+      line-height:1.2;
+      margin-bottom:.85rem;
+    }
+    .section-heading.light { color:var(--white); }
+
+    .section-sub {
+      color:var(--muted);
+      max-width:520px;
+      margin:0 auto;
+      line-height:1.8;
+      font-size:.975rem;
+    }
+    .section-sub.light { color:rgba(255,255,255,.55); }
+
+    .gold-rule {
+      width:52px; height:3px;
+      background:linear-gradient(90deg,var(--gold),var(--gold-lt));
+      border-radius:2px; margin:1rem auto 0;
+    }
+
+    /* ===========================
+       REVEAL ANIMATIONS
+    =========================== */
+    .reveal {
+      opacity:0;
+      transform:translateY(28px);
+      transition:opacity .7s ease, transform .7s ease;
+    }
+    .reveal.in { opacity:1; transform:translateY(0); }
+    .d1{transition-delay:.08s}
+    .d2{transition-delay:.16s}
+    .d3{transition-delay:.24s}
+    .d4{transition-delay:.32s}
+    .d5{transition-delay:.40s}
+    .d6{transition-delay:.48s}
+
+    /* ===========================
+       NAVIGATION
+    =========================== */
+    #nav {
+      position:fixed; top:0; width:100%; z-index:1000;
+      background:rgba(10,22,40,.95);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--border-gold);
+      transition:box-shadow .3s;
+    }
+    #nav.scrolled { box-shadow:0 4px 28px rgba(0,0,0,.35); }
+
+    .nav-wrap {
+      max-width:1200px; margin:0 auto;
+      padding:.95rem 2rem;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+
+    .nav-brand {
+      font-family:'Playfair Display',serif;
+      color:var(--white); text-decoration:none;
+      font-size:1.2rem; font-weight:600; line-height:1.15;
+    }
+    .nav-brand em { color:var(--gold); font-style:normal; }
+    .nav-brand small { display:block; font-size:.65rem; font-weight:400; color:rgba(255,255,255,.45); font-family:'Inter',sans-serif; letter-spacing:.1em; text-transform:uppercase; margin-top:1px; }
+
+    .nav-links { display:flex; align-items:center; gap:2rem; list-style:none; }
+    .nav-links a {
+      color:rgba(255,255,255,.75); text-decoration:none;
+      font-size:.8rem; font-weight:500; letter-spacing:.07em;
+      text-transform:uppercase; transition:color .2s;
+    }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-links .nav-btn {
+      background:var(--gold); color:var(--navy) !important;
+      padding:.5rem 1.2rem; border-radius:4px; font-weight:700 !important;
+    }
+    .nav-links .nav-btn:hover { background:var(--gold-lt); color:var(--navy) !important; }
+
+    .hamburger { display:none; cursor:pointer; flex-direction:column; gap:5px; }
+    .hamburger span { width:24px; height:2px; background:var(--white); border-radius:2px; transition:.3s; }
+
+    /* Mobile drawer */
+    #mobile-nav {
+      display:none; position:fixed; inset:0; z-index:999;
+      background:rgba(10,22,40,.98);
+      flex-direction:column; align-items:center; justify-content:center; gap:1.75rem;
+    }
+    #mobile-nav a { color:var(--white); text-decoration:none; font-size:1.1rem; font-weight:500; }
+    #mobile-nav a.gold-link { color:var(--gold); font-weight:700; font-size:1.2rem; }
+    #mobile-nav .close-btn {
+      position:absolute; top:1.5rem; right:1.75rem;
+      background:none; border:none; color:var(--white); font-size:1.6rem; cursor:pointer;
+    }
+
+    /* ===========================
+       HERO
+    =========================== */
+    #hero {
+      min-height:100vh; background:var(--navy);
+      display:flex; align-items:center; position:relative; overflow:hidden;
+    }
+
+    /* Grid lines texture */
+    .hero-grid {
+      position:absolute; inset:0; pointer-events:none;
+      background-image:
+        linear-gradient(rgba(201,168,76,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,.035) 1px, transparent 1px);
+      background-size:64px 64px;
+    }
+
+    /* Radial ambient glow */
+    .hero-glow {
+      position:absolute; inset:0; pointer-events:none;
+      background:radial-gradient(ellipse 75% 65% at 65% 48%, rgba(30,53,103,.55) 0%, transparent 70%);
+    }
+
+    .hero-inner {
+      position:relative; z-index:2;
+      max-width:1200px; margin:0 auto;
+      padding:7rem 2rem 4rem;
+      display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; width:100%;
+    }
+
+    /* Badge pill */
+    .hero-pill {
+      display:inline-flex; align-items:center; gap:.6rem;
+      background:rgba(201,168,76,.1); border:1px solid rgba(201,168,76,.28);
+      border-radius:50px; padding:.38rem 1rem; margin-bottom:1.6rem;
+    }
+    .hero-pill-dot { width:7px; height:7px; border-radius:50%; background:var(--gold); animation:blink 2s ease infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.35} }
+    .hero-pill span { font-size:.78rem; color:var(--gold-lt); letter-spacing:.1em; text-transform:uppercase; font-weight:500; }
+
+    .hero-h1 {
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2.4rem,4vw,3.8rem);
+      color:var(--white); line-height:1.13; font-weight:700;
+      margin-bottom:1.2rem;
+    }
+    .hero-h1 em { color:var(--gold); font-style:italic; }
+
+    .hero-desc {
+      color:rgba(255,255,255,.6); font-size:1.05rem; line-height:1.8;
+      margin-bottom:2.4rem; max-width:460px;
+    }
+
+    .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; }
+
+    .btn-gold {
+      background:var(--gold); color:var(--navy);
+      padding:.9rem 2rem; border-radius:5px; font-weight:700;
+      font-size:.92rem; text-decoration:none;
+      display:inline-flex; align-items:center; gap:.6rem;
+      border:2px solid var(--gold); transition:all .25s;
+    }
+    .btn-gold:hover { background:var(--gold-lt); border-color:var(--gold-lt); transform:translateY(-2px); box-shadow:0 10px 28px rgba(201,168,76,.35); }
+
+    .btn-outline {
+      background:transparent; color:var(--white);
+      padding:.9rem 2rem; border-radius:5px; font-weight:600;
+      font-size:.92rem; text-decoration:none;
+      display:inline-flex; align-items:center; gap:.6rem;
+      border:2px solid rgba(255,255,255,.3); transition:all .25s;
+    }
+    .btn-outline:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
+
+    .hero-stats {
+      display:flex; gap:2.5rem; flex-wrap:wrap;
+      margin-top:2.8rem; padding-top:2.5rem;
+      border-top:1px solid rgba(201,168,76,.18);
+    }
+    .stat-num { font-family:'Playfair Display',serif; font-size:2.1rem; font-weight:700; color:var(--gold); }
+    .stat-label { font-size:.75rem; color:rgba(255,255,255,.45); text-transform:uppercase; letter-spacing:.09em; margin-top:.15rem; }
+
+    /* Hero Right — Scales SVG */
+    .hero-visual { display:flex; justify-content:center; align-items:center; }
+    .scales-wrap {
+      width:380px; height:400px; position:relative;
+      animation:levitate 5s ease-in-out infinite;
+    }
+    @keyframes levitate { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    .scales-glow-orb {
+      position:absolute; top:50%; left:50%;
+      transform:translate(-50%,-50%);
+      width:260px; height:260px;
+      background:radial-gradient(circle, rgba(201,168,76,.13) 0%, transparent 70%);
+      border-radius:50%; pointer-events:none;
+    }
+
+    /* ===========================
+       TRUST BAR
+    =========================== */
+    .trust-bar {
+      background:var(--navy-mid);
+      border-top:1px solid var(--border-gold);
+      border-bottom:1px solid var(--border-gold);
+      padding:1.15rem 2rem;
+    }
+    .trust-inner {
+      max-width:1200px; margin:0 auto;
+      display:flex; flex-wrap:wrap; gap:1.5rem 2.5rem;
+      justify-content:center; align-items:center;
+    }
+    .trust-item { display:flex; align-items:center; gap:.65rem; color:rgba(255,255,255,.68); font-size:.84rem; }
+    .trust-item i { color:var(--gold); }
+
+    /* ===========================
+       ABOUT
+    =========================== */
+    #about { padding:6rem 2rem; background:var(--off-white); }
+    .about-inner {
+      max-width:1200px; margin:0 auto;
+      display:grid; grid-template-columns:1fr 1.25fr; gap:5rem; align-items:center;
+    }
+
+    /* Portrait */
+    .portrait-col { position:relative; display:flex; justify-content:flex-start; }
+    .portrait-box {
+      width:100%; max-width:360px;
+      aspect-ratio:3/4; border-radius:10px;
+      background:linear-gradient(145deg, var(--navy-mid) 0%, var(--navy) 100%);
+      position:relative; overflow:hidden;
+      box-shadow:0 32px 80px rgba(10,22,40,.22);
+    }
+    .portrait-inner {
+      position:absolute; inset:0;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.25);
+    }
+    .portrait-inner i { font-size:5.5rem; color:rgba(201,168,76,.35); margin-bottom:1rem; }
+    .portrait-inner span { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:.95rem; }
+    .portrait-corner {
+      position:absolute; bottom:-18px; right:-18px;
+      width:110px; height:110px;
+      border:2.5px solid var(--gold); border-radius:10px;
+    }
+    .portrait-badge {
+      position:absolute; top:22px; left:-22px;
+      background:var(--gold); color:var(--navy); padding:.7rem 1rem;
+      border-radius:7px; font-weight:700; font-size:.82rem; line-height:1.3;
+      box-shadow:0 10px 28px rgba(201,168,76,.4);
+    }
+    .portrait-badge strong { display:block; font-size:1.35rem; font-family:'Playfair Display',serif; }
+
+    /* About text */
+    .about-text h2 { font-family:'Playfair Display',serif; font-size:clamp(1.9rem,3vw,2.6rem); color:var(--navy); margin-bottom:.3rem; }
+    .cred-tag { font-family:'Cormorant Garamond',serif; color:var(--gold-dk); font-size:1.05rem; font-weight:600; margin-bottom:1.6rem; display:block; }
+    .about-text p { color:var(--muted); line-height:1.85; font-size:.975rem; margin-bottom:1.15rem; }
+    .highlight-grid { display:grid; grid-template-columns:1fr 1fr; gap:.85rem; margin-top:1.85rem; }
+    .hi-item {
+      display:flex; align-items:center; gap:.75rem;
+      background:var(--white); padding:.8rem 1rem; border-radius:7px;
+      border-left:3px solid var(--gold); font-size:.88rem; font-weight:500; color:var(--text);
+    }
+    .hi-item i { color:var(--gold); font-size:.9rem; }
+
+    /* ===========================
+       PRACTICE AREAS
+    =========================== */
+    #practice { padding:6rem 2rem; background:var(--white); }
+    .practice-wrap { max-width:1200px; margin:0 auto; }
+    .text-center { text-align:center; }
+
+    .cards-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; margin-top:3.5rem; }
+
+    .p-card {
+      background:var(--off-white); border-radius:11px; padding:2rem;
+      border:1px solid var(--border-light); position:relative;
+      overflow:hidden; transition:all .32s; cursor:default;
+    }
+    .p-card::after {
+      content:''; position:absolute; top:0; left:0; right:0; height:3px;
+      background:linear-gradient(90deg,var(--gold),var(--gold-lt));
+      transform:scaleX(0); transform-origin:left; transition:transform .3s;
+    }
+    .p-card:hover { transform:translateY(-7px); box-shadow:0 22px 56px rgba(10,22,40,.1); background:var(--white); }
+    .p-card:hover::after { transform:scaleX(1); }
+
+    .p-icon {
+      width:54px; height:54px; border-radius:12px;
+      background:rgba(201,168,76,.1); display:flex; align-items:center; justify-content:center;
+      margin-bottom:1.2rem; transition:background .3s;
+    }
+    .p-card:hover .p-icon { background:rgba(201,168,76,.2); }
+    .p-icon i { color:var(--gold); font-size:1.4rem; }
+    .p-card h3 { font-family:'Playfair Display',serif; font-size:1.15rem; color:var(--navy); margin-bottom:.65rem; }
+    .p-card p { color:var(--muted); font-size:.875rem; line-height:1.75; }
+
+    /* ===========================
+       WHY CHOOSE US
+    =========================== */
+    #why { padding:6rem 2rem; background:var(--navy); position:relative; overflow:hidden; }
+    #why::before {
+      content:''; position:absolute; inset:0; pointer-events:none;
+      background-image:
+        linear-gradient(rgba(201,168,76,.03) 1px, transparent 1px),
+        linear-gradient(90deg,rgba(201,168,76,.03) 1px, transparent 1px);
+      background-size:64px 64px;
+    }
+    .why-wrap { max-width:1200px; margin:0 auto; position:relative; z-index:1; }
+    .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; margin-top:3.5rem; }
+
+    .w-card {
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(201,168,76,.13);
+      border-radius:11px; padding:2rem;
+      backdrop-filter:blur(6px); transition:all .3s;
+    }
+    .w-card:hover {
+      background:rgba(255,255,255,.07);
+      border-color:rgba(201,168,76,.38); transform:translateY(-5px);
+    }
+    .w-icon {
+      width:48px; height:48px; border-radius:10px;
+      background:rgba(201,168,76,.1); display:flex; align-items:center; justify-content:center;
+      margin-bottom:1.2rem;
+    }
+    .w-icon i { color:var(--gold); font-size:1.2rem; }
+    .w-card h3 { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--white); margin-bottom:.65rem; }
+    .w-card p { color:rgba(255,255,255,.52); font-size:.875rem; line-height:1.75; }
+
+    /* ===========================
+       TESTIMONIALS
+    =========================== */
+    #testimonials { padding:6rem 2rem; background:var(--off-white); }
+    .test-wrap { max-width:1200px; margin:0 auto; }
+    .test-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; margin-top:3.5rem; }
+
+    .t-card {
+      background:var(--white); border-radius:11px; padding:2rem;
+      border:1px solid var(--border-light); transition:all .3s;
+    }
+    .t-card:hover { box-shadow:0 18px 50px rgba(10,22,40,.1); transform:translateY(-5px); }
+    .t-quote { font-family:'Playfair Display',serif; font-size:3.5rem; line-height:.8; color:var(--gold); opacity:.4; }
+    .t-stars { display:flex; gap:2px; color:var(--gold); font-size:.85rem; margin:.75rem 0; }
+    .t-text { color:var(--muted); font-size:.92rem; line-height:1.82; font-style:italic; margin-bottom:1.5rem; }
+    .t-author { display:flex; align-items:center; gap:.9rem; }
+    .t-avatar {
+      width:44px; height:44px; border-radius:50%;
+      background:var(--navy-mid); color:var(--gold);
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:600; flex-shrink:0;
+    }
+    .t-name { font-weight:600; font-size:.88rem; color:var(--navy); }
+    .t-role { font-size:.78rem; color:var(--muted); margin-top:1px; }
+
+    /* ===========================
+       CONTACT
+    =========================== */
+    #contact { padding:6rem 2rem; background:var(--white); }
+    .contact-wrap { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr 1.2fr; gap:5rem; align-items:start; }
+
+    /* Info side */
+    .c-info h2 { font-family:'Playfair Display',serif; font-size:clamp(1.7rem,2.5vw,2.2rem); color:var(--navy); margin-bottom:.85rem; }
+    .c-info p { color:var(--muted); line-height:1.82; font-size:.95rem; margin-bottom:1.8rem; }
+
+    .c-details { display:flex; flex-direction:column; gap:1.1rem; margin-bottom:1.75rem; }
+    .c-item { display:flex; align-items:flex-start; gap:.9rem; }
+    .c-ico { width:44px; height:44px; background:rgba(201,168,76,.1); border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .c-ico i { color:var(--gold); }
+    .c-lbl { font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:.15rem; }
+    .c-val { font-weight:600; color:var(--navy); font-size:.95rem; }
+
+    .c-btns { display:flex; flex-direction:column; gap:.75rem; }
+    .btn-call {
+      display:flex; align-items:center; justify-content:center; gap:.75rem;
+      background:var(--navy); color:var(--white); padding:.9rem 1.5rem;
+      border-radius:6px; font-weight:600; font-size:.92rem; text-decoration:none; transition:all .25s;
+    }
+    .btn-call:hover { background:var(--navy-light); transform:translateY(-2px); box-shadow:0 10px 28px rgba(10,22,40,.25); }
+    .btn-wa {
+      display:flex; align-items:center; justify-content:center; gap:.75rem;
+      background:#25D366; color:var(--white); padding:.9rem 1.5rem;
+      border-radius:6px; font-weight:600; font-size:.92rem; text-decoration:none; transition:all .25s;
+    }
+    .btn-wa:hover { background:#128C7E; transform:translateY(-2px); box-shadow:0 10px 28px rgba(37,211,102,.3); }
+
+    .map-box { margin-top:1.5rem; border-radius:10px; overflow:hidden; height:200px; border:1.5px solid var(--border-light); }
+    .map-box iframe { width:100%; height:100%; border:none; }
+
+    /* Form side */
+    .c-form-box { background:var(--off-white); border-radius:14px; padding:2.5rem; }
+    .c-form-box h3 { font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--navy); margin-bottom:1.75rem; }
+
+    .form-row2 { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .f-group { margin-bottom:1.15rem; }
+    .f-group label { display:block; font-size:.75rem; font-weight:600; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin-bottom:.45rem; }
+    .f-group input,
+    .f-group select,
+    .f-group textarea {
+      width:100%; padding:.85rem 1rem;
+      border:1.5px solid rgba(0,0,0,.1); border-radius:7px;
+      font-family:'Inter',sans-serif; font-size:.94rem; color:var(--text);
+      background:var(--white); outline:none; transition:border-color .2s, box-shadow .2s;
+      appearance:none;
+    }
+    .f-group input:focus,
+    .f-group select:focus,
+    .f-group textarea:focus {
+      border-color:var(--gold);
+      box-shadow:0 0 0 3px rgba(201,168,76,.12);
+    }
+    .f-group textarea { resize:vertical; min-height:115px; }
+
+    .btn-submit {
+      width:100%; background:var(--gold); color:var(--navy);
+      padding:1rem; border:none; border-radius:7px;
+      font-size:.9rem; font-weight:700; cursor:pointer;
+      font-family:'Inter',sans-serif; transition:all .25s;
+      letter-spacing:.06em; text-transform:uppercase;
+    }
+    .btn-submit:hover { background:var(--gold-lt); transform:translateY(-2px); box-shadow:0 10px 28px rgba(201,168,76,.35); }
+    .btn-submit.sent { background:#22c55e; color:var(--white); }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer { background:var(--charcoal); color:rgba(255,255,255,.65); padding:4.5rem 2rem 1.5rem; }
+    .footer-wrap { max-width:1200px; margin:0 auto; }
+    .footer-grid { display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:3rem; margin-bottom:3rem; }
+
+    .f-brand-logo { font-family:'Playfair Display',serif; color:var(--white); font-size:1.25rem; font-weight:600; }
+    .f-brand-logo em { color:var(--gold); font-style:normal; }
+    .f-brand-sub { font-size:.72rem; color:var(--gold); letter-spacing:.1em; text-transform:uppercase; margin:.15rem 0 1rem; }
+    .f-brand p { font-size:.86rem; line-height:1.78; max-width:250px; }
+    .social-row { display:flex; gap:.65rem; margin-top:1.3rem; }
+    .s-ico {
+      width:36px; height:36px; border-radius:6px;
+      background:rgba(255,255,255,.07); display:flex; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.65); text-decoration:none; font-size:.875rem; transition:all .22s;
+    }
+    .s-ico:hover { background:var(--gold); color:var(--navy); }
+
+    .f-col h4 {
+      color:var(--white); font-size:.8rem; font-weight:600;
+      letter-spacing:.09em; text-transform:uppercase; margin-bottom:1.25rem;
+      padding-bottom:.6rem; border-bottom:2px solid var(--gold); display:inline-block;
+    }
+    .f-links { list-style:none; display:flex; flex-direction:column; gap:.55rem; }
+    .f-links a { color:rgba(255,255,255,.58); text-decoration:none; font-size:.86rem; transition:color .2s; }
+    .f-links a:hover { color:var(--gold); }
+
+    .f-contact-item { display:flex; gap:.7rem; align-items:flex-start; margin-bottom:.85rem; font-size:.86rem; }
+    .f-contact-item i { color:var(--gold); width:15px; flex-shrink:0; margin-top:2px; }
+    .f-contact-item a { color:inherit; text-decoration:none; }
+    .f-contact-item a:hover { color:var(--gold); }
+
+    .footer-bottom {
+      border-top:1px solid rgba(255,255,255,.08); padding-top:1.4rem;
+      display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem;
+      font-size:.78rem; color:rgba(255,255,255,.35);
+    }
+
+    /* ===========================
+       FLOATING WHATSAPP
+    =========================== */
+    .float-wa {
+      position:fixed; bottom:1.75rem; right:1.75rem; z-index:990;
+      width:56px; height:56px; border-radius:50%; background:#25D366;
+      display:flex; align-items:center; justify-content:center;
+      color:var(--white); font-size:1.5rem; text-decoration:none;
+      box-shadow:0 8px 28px rgba(37,211,102,.45);
+      animation:floatBob 3.5s ease-in-out infinite;
+    }
+    @keyframes floatBob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
+    .float-wa:hover { background:#128C7E; animation:none; transform:scale(1.1); }
+
+    /* ===========================
+       RESPONSIVE
+    =========================== */
+    @media(max-width:1024px){
+      .hero-inner { grid-template-columns:1fr; }
+      .hero-visual { display:none; }
+      .hero-desc { max-width:100%; }
+      .hero-btns { justify-content:flex-start; }
+      .about-inner { grid-template-columns:1fr; }
+      .portrait-col { justify-content:center; }
+      .cards-grid,
+      .why-grid,
+      .test-grid { grid-template-columns:repeat(2,1fr); }
+      .contact-wrap { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:640px){
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .hero-h1 { font-size:2.2rem; }
+      .hero-btns { flex-direction:column; align-items:flex-start; }
+      .hero-stats { gap:1.5rem; }
+      .cards-grid,
+      .why-grid,
+      .test-grid { grid-template-columns:1fr; }
+      .form-row2 { grid-template-columns:1fr; }
+      .highlight-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; text-align:center; }
+      .about-inner { gap:2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+  NAVIGATION
+============================================================ -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <a href="#hero" class="nav-brand">
+      Sameer <em>Khan</em>
+      <small>Advocate &amp; Legal Consultant</small>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#practice">Practice Areas</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact" class="nav-btn">Book Consultation</a></li>
+    </ul>
+    <div class="hamburger" onclick="openMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-nav">
+  <button class="close-btn" onclick="closeMobile()">✕</button>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#practice" onclick="closeMobile()">Practice Areas</a>
+  <a href="#why" onclick="closeMobile()">Why Choose Us</a>
+  <a href="#testimonials" onclick="closeMobile()">Testimonials</a>
+  <a href="#contact" class="gold-link" onclick="closeMobile()">Book Consultation</a>
+  <a href="tel:9509947159" style="color:rgba(255,255,255,.6);font-size:.95rem;">📞 9509947159</a>
+</div>
+
+<!-- ============================================================
+  HERO
+============================================================ -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-inner">
+    <!-- Left -->
+    <div class="hero-left">
+      <div class="hero-pill">
+        <div class="hero-pill-dot"></div>
+        <span>Available for Consultation</span>
+      </div>
+      <h1 class="hero-h1">
+        Trusted Legal Advice<br>
+        &amp; <em>Effective</em><br>
+        Representation
+      </h1>
+      <p class="hero-desc">
+        Providing reliable legal consultation and representation with dedication, integrity, and professionalism. Your legal challenges, expertly handled.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-gold">
+          <i class="fas fa-calendar-alt"></i> Book Consultation
+        </a>
+        <a href="tel:9509947159" class="btn-outline">
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Cases Handled</div>
+        </div>
+        <div>
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Practice Areas</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Confidential</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Scales of Justice SVG -->
+    <div class="hero-visual">
+      <div class="scales-wrap">
+        <div class="scales-glow-orb"></div>
+        <svg viewBox="0 0 380 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <defs>
+            <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#C9A84C"/>
+              <stop offset="100%" stop-color="#E4CC8B"/>
+            </linearGradient>
+            <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(201,168,76,.12)"/>
+              <stop offset="100%" stop-color="rgba(201,168,76,0)"/>
+            </radialGradient>
+            <filter id="glow2">
+              <feGaussianBlur stdDeviation="2.5" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Ambient orbs -->
+          <circle cx="190" cy="195" r="170" fill="url(#g2)" opacity=".6"/>
+          <circle cx="190" cy="195" r="162" fill="none" stroke="rgba(201,168,76,.1)" stroke-width="1"/>
+          <circle cx="190" cy="195" r="145" fill="none" stroke="rgba(201,168,76,.07)" stroke-width="1" stroke-dasharray="5 9"/>
+
+          <!-- Central pillar -->
+          <rect x="186" y="90" width="8" height="226" rx="4" fill="url(#g1)" filter="url(#glow2)"/>
+
+          <!-- Top finial -->
+          <circle cx="190" cy="91" r="12" fill="#0A1628" stroke="url(#g1)" stroke-width="2"/>
+          <circle cx="190" cy="91" r="6" fill="url(#g1)"/>
+          <!-- Small star top -->
+          <polygon points="190,76 192,82 198,82 193,86 195,92 190,88 185,92 187,86 182,82 188,82" fill="rgba(201,168,76,.55)" />
+
+          <!-- Cross beam — slight right-tilt for balanced-justice look -->
+          <g transform="rotate(2,190,158)">
+            <rect x="70" y="154" width="240" height="7" rx="3.5" fill="url(#g1)" filter="url(#glow2)"/>
+
+            <!-- LEFT chains -->
+            <line x1="85"  y1="161" x2="75"  y2="222" stroke="rgba(201,168,76,.65)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <line x1="85"  y1="161" x2="97"  y2="222" stroke="rgba(201,168,76,.65)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <line x1="75"  y1="222" x2="97"  y2="222" stroke="rgba(201,168,76,.7)" stroke-width="1.5"/>
+            <!-- LEFT pan -->
+            <path d="M52 222 Q86 258 120 222" fill="rgba(201,168,76,.13)" stroke="url(#g1)" stroke-width="2"/>
+            <ellipse cx="86" cy="222" rx="34" ry="4" fill="url(#g1)" opacity=".35"/>
+
+            <!-- RIGHT chains -->
+            <line x1="295" y1="161" x2="285" y2="208" stroke="rgba(201,168,76,.65)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <line x1="295" y1="161" x2="307" y2="208" stroke="rgba(201,168,76,.65)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <line x1="285" y1="208" x2="307" y2="208" stroke="rgba(201,168,76,.7)" stroke-width="1.5"/>
+            <!-- RIGHT pan -->
+            <path d="M262 208 Q296 244 330 208" fill="rgba(201,168,76,.13)" stroke="url(#g1)" stroke-width="2"/>
+            <ellipse cx="296" cy="208" rx="34" ry="4" fill="url(#g1)" opacity=".35"/>
+          </g>
+
+          <!-- Base -->
+          <rect x="148" y="316" width="84" height="7" rx="3.5" fill="url(#g1)"/>
+          <rect x="128" y="320" width="124" height="5" rx="2.5" fill="url(#g1)" opacity=".5"/>
+
+          <!-- Sparkle dots -->
+          <circle cx="130" cy="130" r="2.5" fill="rgba(201,168,76,.7)"><animate attributeName="opacity" values=".3;1;.3" dur="2.1s" repeatCount="indefinite"/></circle>
+          <circle cx="265" cy="108" r="2"   fill="rgba(201,168,76,.7)"><animate attributeName="opacity" values="1;.3;1" dur="1.7s" repeatCount="indefinite"/></circle>
+          <circle cx="320" cy="175" r="2.5" fill="rgba(201,168,76,.6)"><animate attributeName="opacity" values=".5;1;.5" dur="2.6s" repeatCount="indefinite"/></circle>
+          <circle cx="62"  cy="210" r="2"   fill="rgba(201,168,76,.55)"><animate attributeName="opacity" values="1;.4;1" dur="2.3s" repeatCount="indefinite"/></circle>
+          <circle cx="190" cy="340" r="1.5" fill="rgba(201,168,76,.4)"><animate attributeName="opacity" values=".4;.9;.4" dur="3s" repeatCount="indefinite"/></circle>
+
+          <!-- JUSTICE letterform -->
+          <text x="190" y="375" text-anchor="middle" fill="rgba(201,168,76,.22)" font-family="'Playfair Display',serif" font-size="13" letter-spacing="10">JUSTICE</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  TRUST BAR
+============================================================ -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><i class="fas fa-shield-alt"></i><span>Licensed Advocate</span></div>
+    <div class="trust-item"><i class="fas fa-lock"></i><span>100% Confidential</span></div>
+    <div class="trust-item"><i class="fas fa-balance-scale"></i><span>Ethical Practice</span></div>
+    <div class="trust-item"><i class="fas fa-clock"></i><span>Timely Representation</span></div>
+    <div class="trust-item"><i class="fas fa-handshake"></i><span>Client-First Approach</span></div>
+    <div class="trust-item"><i class="fas fa-map-marker-alt"></i><span>Ramgarh, Alwar, Rajasthan</span></div>
+  </div>
+</div>
+
+<!-- ============================================================
+  ABOUT
+============================================================ -->
+<section id="about">
+  <div class="about-inner">
+    <!-- Portrait -->
+    <div class="portrait-col reveal">
+      <div class="portrait-box">
+        <div class="portrait-inner">
+          <i class="fas fa-user-tie"></i>
+          <span>Sameer Khan, Advocate</span>
+        </div>
+      </div>
+      <div class="portrait-corner"></div>
+      <div class="portrait-badge">
+        <strong>B.A. LL.B.</strong>
+        Advocate
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div class="about-text reveal d2">
+      <span class="italic-sm">About the Advocate</span>
+      <h2>Sameer Khan</h2>
+      <span class="cred-tag">B.A. LL.B. &nbsp;|&nbsp; Advocate, Rajasthan Bar</span>
+      <p>
+        Sameer Khan is a dedicated legal professional committed to providing practical legal solutions and strong representation. With a client-focused approach, he assists individuals and businesses in navigating legal matters with confidence and clarity.
+      </p>
+      <p>
+        Practicing in Ramgarh, Alwar, Rajasthan, Sameer Khan brings thorough knowledge of civil, criminal, and family law. He is known for meticulous attention to detail, transparent communication, and unwavering commitment to protecting his clients' rights and interests at every step of the legal process.
+      </p>
+      <div class="highlight-grid">
+        <div class="hi-item"><i class="fas fa-check-circle"></i> Experienced Advocate</div>
+        <div class="hi-item"><i class="fas fa-check-circle"></i> Multiple Practice Areas</div>
+        <div class="hi-item"><i class="fas fa-check-circle"></i> Honest Legal Advice</div>
+        <div class="hi-item"><i class="fas fa-check-circle"></i> Proven Track Record</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  PRACTICE AREAS
+============================================================ -->
+<section id="practice">
+  <div class="practice-wrap">
+    <div class="text-center reveal">
+      <span class="italic-sm">Legal Expertise</span>
+      <h2 class="section-heading">Practice Areas</h2>
+      <p class="section-sub">Comprehensive legal services across multiple disciplines, delivered with expertise and commitment to achieving the best outcomes.</p>
+      <div class="gold-rule"></div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="p-card reveal d1">
+        <div class="p-icon"><i class="fas fa-gavel"></i></div>
+        <h3>Civil Law</h3>
+        <p>Expert representation in civil disputes, contract matters, and civil litigation to safeguard your rights and resolve conflicts effectively in court.</p>
+      </div>
+      <div class="p-card reveal d2">
+        <div class="p-icon"><i class="fas fa-balance-scale"></i></div>
+        <h3>Criminal Law</h3>
+        <p>Strong defense and prosecution support in criminal matters, ensuring fair treatment and thorough legal representation throughout the entire process.</p>
+      </div>
+      <div class="p-card reveal d3">
+        <div class="p-icon"><i class="fas fa-home"></i></div>
+        <h3>Property Disputes</h3>
+        <p>Skilled resolution of land and property disputes, title issues, encroachment matters, and all real estate legal complexities in Rajasthan.</p>
+      </div>
+      <div class="p-card reveal d4">
+        <div class="p-icon"><i class="fas fa-users"></i></div>
+        <h3>Family Law</h3>
+        <p>Compassionate guidance on matrimonial disputes, divorce proceedings, child custody, maintenance, and all family-related legal matters.</p>
+      </div>
+      <div class="p-card reveal d5">
+        <div class="p-icon"><i class="fas fa-file-contract"></i></div>
+        <h3>Legal Documentation</h3>
+        <p>Precise drafting and vetting of contracts, affidavits, agreements, wills, and all legal documentation handled with meticulous professional care.</p>
+      </div>
+      <div class="p-card reveal d6">
+        <div class="p-icon"><i class="fas fa-comments"></i></div>
+        <h3>Consultation &amp; Advisory</h3>
+        <p>Strategic legal advice for individuals and businesses on rights, obligations, regulatory compliance, and proactive risk management solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  WHY CHOOSE US
+============================================================ -->
+<section id="why">
+  <div class="why-wrap">
+    <div class="text-center reveal">
+      <span class="italic-sm">Our Commitment</span>
+      <h2 class="section-heading light">Why Choose Sameer Khan</h2>
+      <p class="section-sub light">A legal practice built on principles that put your interests, rights, and desired outcomes first, every single time.</p>
+      <div class="gold-rule"></div>
+    </div>
+
+    <div class="why-grid">
+      <div class="w-card reveal d1">
+        <div class="w-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Professional Legal Guidance</h3>
+        <p>Sound legal knowledge combined with practical courtroom experience to guide you through every stage of your case with clarity and precision.</p>
+      </div>
+      <div class="w-card reveal d2">
+        <div class="w-icon"><i class="fas fa-user-check"></i></div>
+        <h3>Client-Centered Approach</h3>
+        <p>Your goals and concerns drive every decision. A personalized strategy is crafted for your unique circumstances and desired outcomes.</p>
+      </div>
+      <div class="w-card reveal d3">
+        <div class="w-icon"><i class="fas fa-comment-dots"></i></div>
+        <h3>Transparent Communication</h3>
+        <p>You are kept fully informed at every stage — no legal jargon, no surprises, just clear and honest communication you can count on.</p>
+      </div>
+      <div class="w-card reveal d4">
+        <div class="w-icon"><i class="fas fa-balance-scale-right"></i></div>
+        <h3>Ethical Representation</h3>
+        <p>Grounded in professional ethics and integrity — your case is managed with the highest standards of legal conduct and moral responsibility.</p>
+      </div>
+      <div class="w-card reveal d5">
+        <div class="w-icon"><i class="fas fa-clock"></i></div>
+        <h3>Timely Legal Solutions</h3>
+        <p>Efficient case management and prompt action ensure your legal matters are addressed without unnecessary delays or procedural oversights.</p>
+      </div>
+      <div class="w-card reveal d6">
+        <div class="w-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Confidential Consultation</h3>
+        <p>Every conversation, document, and detail you share is protected by absolute professional confidentiality — always, without exception.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  TESTIMONIALS
+============================================================ -->
+<section id="testimonials">
+  <div class="test-wrap">
+    <div class="text-center reveal">
+      <span class="italic-sm">Client Testimonials</span>
+      <h2 class="section-heading">What Our Clients Say</h2>
+      <p class="section-sub">Real experiences from individuals and families who trusted us with their most important legal matters.</p>
+      <div class="gold-rule"></div>
+    </div>
+
+    <div class="test-grid">
+      <div class="t-card reveal d1">
+        <div class="t-quote">"</div>
+        <div class="t-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="t-text">Sameer Khan handled my property dispute with exceptional skill and dedication. He kept me fully informed throughout and worked tirelessly to achieve a favorable resolution. His professionalism gave me complete peace of mind.</p>
+        <div class="t-author">
+          <div class="t-avatar">R</div>
+          <div>
+            <div class="t-name">Ramesh Sharma</div>
+            <div class="t-role">Property Dispute, Alwar</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card reveal d2">
+        <div class="t-quote">"</div>
+        <div class="t-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="t-text">During a very difficult family matter, Sameer Khan guided us with compassion and clear thinking. He explained every legal step carefully and fought diligently for our family's interests. I highly recommend his services.</p>
+        <div class="t-author">
+          <div class="t-avatar">P</div>
+          <div>
+            <div class="t-name">Priya Meena</div>
+            <div class="t-role">Family Law Client, Ramgarh</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card reveal d3">
+        <div class="t-quote">"</div>
+        <div class="t-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="t-text">As a business owner, I needed reliable legal documentation and advisory services. Sameer Khan drafted all contracts with precision and professionalism. His guidance has been invaluable in safeguarding our business interests.</p>
+        <div class="t-author">
+          <div class="t-avatar">V</div>
+          <div>
+            <div class="t-name">Vijay Gupta</div>
+            <div class="t-role">Business Advisory, Alwar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  CONTACT
+============================================================ -->
+<section id="contact">
+  <div class="contact-wrap">
+    <!-- Info -->
+    <div class="c-info reveal">
+      <span class="italic-sm">Get In Touch</span>
+      <h2>Book Your Free Consultation</h2>
+      <p>Take the first step toward resolving your legal matter. Reach out for a confidential consultation where we discuss your situation and explore the best legal path forward together.</p>
+
+      <div class="c-details">
+        <div class="c-item">
+          <div class="c-ico"><i class="fas fa-user-tie"></i></div>
+          <div>
+            <div class="c-lbl">Advocate</div>
+            <div class="c-val">Sameer Khan, B.A. LL.B.</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="c-lbl">Office Address</div>
+            <div class="c-val">Ramgarh, Alwar, Rajasthan</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="c-lbl">Contact Number</div>
+            <div class="c-val">+91 76653 73702</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="c-lbl">Consultation Hours</div>
+            <div class="c-val">Monday – Saturday: 9:00 AM – 6:00 PM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-btns">
+        <a href="tel:9509947159" class="btn-call">
+          <i class="fas fa-phone-alt"></i> Click to Call: 9509947159
+        </a>
+        <a href="https://wa.me/919509947159?text=Hello%20Sameer%20Khan%20Sir%2C%20I%20need%20legal%20consultation." target="_blank" class="btn-wa">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+
+      <div class="map-box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56914.3!2d76.7!3d27.28!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3971b1b7e2b94b71%3A0xb84e2cb43d8bf8d0!2sRamgarh%2C%20Alwar%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1717000000000"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Sameer Khan Advocate Office – Ramgarh, Alwar, Rajasthan">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="c-form-box reveal d2">
+      <h3>Send a Message</h3>
+      <div class="form-row2">
+        <div class="f-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name" id="f-name"/>
+        </div>
+        <div class="f-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" id="f-phone"/>
+        </div>
+      </div>
+      <div class="f-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="your@email.com" id="f-email"/>
+      </div>
+      <div class="f-group">
+        <label>Legal Matter</label>
+        <select id="f-matter">
+          <option value="">— Select your legal concern —</option>
+          <option>Civil Law</option>
+          <option>Criminal Law</option>
+          <option>Property Dispute</option>
+          <option>Family Law</option>
+          <option>Legal Documentation</option>
+          <option>General Consultation</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="f-group">
+        <label>Brief Description</label>
+        <textarea id="f-msg" placeholder="Please describe your legal matter briefly so we can assist you better…"></textarea>
+      </div>
+      <button class="btn-submit" id="submitBtn" onclick="handleSubmit()">
+        <i class="fas fa-paper-plane"></i>&nbsp; Send Message
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  FOOTER
+============================================================ -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="f-col f-brand">
+        <div class="f-brand-logo">Sameer <em>Khan</em></div>
+        <div class="f-brand-sub">B.A. LL.B. &nbsp;|&nbsp; Advocate</div>
+        <p>Committed to delivering honest, effective, and professional legal services to individuals and businesses across Rajasthan.</p>
+        <div class="social-row">
+          <a href="#" class="s-ico" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/919509947159" class="s-ico" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:9509947159" class="s-ico" aria-label="Call"><i class="fas fa-phone"></i></a>
+          <a href="mailto:sameerkhanadvocate@gmail.com" class="s-ico" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="f-col">
+        <h4>Quick Links</h4>
+        <ul class="f-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#practice">Practice Areas</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Practice Areas -->
+      <div class="f-col">
+        <h4>Practice Areas</h4>
+        <ul class="f-links">
+          <li><a href="#practice">Civil Law</a></li>
+          <li><a href="#practice">Criminal Law</a></li>
+          <li><a href="#practice">Property Disputes</a></li>
+          <li><a href="#practice">Family Law</a></li>
+          <li><a href="#practice">Legal Documentation</a></li>
+          <li><a href="#practice">Consultation</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="f-col">
+        <h4>Contact</h4>
+        <div class="f-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Ramgarh, Alwar, Rajasthan</span>
+        </div>
+        <div class="f-contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:9509947159">9509947159</a>
+        </div>
+        <div class="f-contact-item">
+          <i class="fas fa-clock"></i>
+          <span>Mon – Sat: 9 AM – 6 PM</span>
+        </div>
+        <div class="f-contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/919509947159" style="color:var(--gold)">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Sameer Khan, Advocate. All rights reserved.</span>
+      <span>Ramgarh, Alwar, Rajasthan &nbsp;|&nbsp; 9509947159</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919509947159?text=Hello%20Sameer%20Khan%20Sir%2C%20I%20need%20legal%20consultation."
+   target="_blank" class="float-wa" title="Chat on WhatsApp" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ============================================================
+  SCRIPTS
+============================================================ -->
+<script>
+  /* ---------- Nav ---------- */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  /* ---------- Mobile menu ---------- */
+  const mobileNav = document.getElementById('mobile-nav');
+  function openMobile()  { mobileNav.style.display = 'flex'; document.body.style.overflow='hidden'; }
+  function closeMobile() { mobileNav.style.display = 'none';  document.body.style.overflow=''; }
+
+  /* ---------- Scroll reveal ---------- */
+  const revealEls = document.querySelectorAll('.reveal');
+  const ro = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => ro.observe(el));
+
+  /* ---------- Hero fade-in ---------- */
+  window.addEventListener('DOMContentLoaded', () => {
+    const hl = document.querySelector('.hero-left');
+    if(hl) {
+      hl.style.opacity = '0';
+      hl.style.transform = 'translateY(22px)';
+      hl.style.transition = 'opacity .9s ease .25s, transform .9s ease .25s';
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          hl.style.opacity = '1';
+          hl.style.transform = 'translateY(0)';
+        });
+      });
+    }
+  });
+
+  /* ---------- Form submit ---------- */
+  function handleSubmit() {
+    const btn  = document.getElementById('submitBtn');
+    const name = document.getElementById('f-name').value.trim();
+    const phone= document.getElementById('f-phone').value.trim();
+    if(!name || !phone) {
+      alert('Please enter your name and phone number.');
+      return;
+    }
+    btn.textContent = '✓  Message Sent — We\'ll Contact You Soon!';
+    btn.classList.add('sent');
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i>&nbsp; Send Message';
+      btn.classList.remove('sent');
+      btn.disabled = false;
+      ['f-name','f-phone','f-email','f-matter','f-msg'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.value = '';
+      });
+    }, 4000);
+  }
+
+  /* ---------- Smooth active nav links ---------- */
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navAs    = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(sec => {
+      if(window.scrollY >= sec.offsetTop - 120) cur = sec.id;
+    });
+    navAs.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#'+cur ? 'var(--gold)' : '';
+    });
+  });
+</script>
+
+</body>
+</html>
